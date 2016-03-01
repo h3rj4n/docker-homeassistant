@@ -1,4 +1,4 @@
-# Home-Assistant Docker Image
+# Home Assistant Docker Image
 
 
 
