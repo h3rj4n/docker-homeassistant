@@ -4,6 +4,7 @@
 
 Small docker image with [home assistant](https://home-assistant.io/) based on [Alpine Linux](https://hub.docker.com/_/alpine/).
 
+[![](https://images.microbadger.com/badges/image/pstauffer/homeassistant.svg)](https://microbadger.com/images/pstauffer/homeassistant)
 
 ## Usage
 ```
