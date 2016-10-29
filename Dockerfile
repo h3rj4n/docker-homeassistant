@@ -1,38 +1,21 @@
-FROM pstauffer/python3:latest
+FROM resnullius/alpine-armv7l:latest
+MAINTAINER Herjan van Eijk <docker@f28.nl>
 
-MAINTAINER pstauffer@confirm.ch
+RUN apk --update --no-cache add ca-certificates python3 python3-dev bash nmap net-tools gcc && \
+    python3 -m ensurepip && \
+    rm -r /usr/lib/python*/ensurepip && \
+    pip3 install --upgrade pip setuptools homeassistant
 
-#
-# Install all required dependencies.
-#
+VOLUME /config
 
-RUN pip3 install --no-cache-dir homeassistant
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-#
-# Add init script.
-#
+COPY custom_require.txt requirements_all.txt
 
-ADD init.sh /home/homeassistant/init.sh
+RUN pip3 install --no-cache-dir -r requirements_all.txt
 
-RUN addgroup -g 666 homeassistant && \
-    adduser -u 666 -G homeassistant -h /home/homeassistant -g "homeassistant User" -s /bin/sh -D homeassistant && \
-    chown homeassistant:homeassistant /home/homeassistant/init.sh && \
-    chmod 750 /home/homeassistant/init.sh
+EXPOSE 8123
 
-
-#
-# Define container settings.
-#
-
-WORKDIR /home/homeassistant
-
-VOLUME ["/home/homeassistant"]
-
-EXPOSE 8123/tcp
-
-USER homeassistant
-
-#
-# Start home-assistant.
-#
-CMD ["/home/homeassistant/init.sh"]
+# Copy source COPY . .
+CMD [ "python3", "-m", "homeassistant", "--config", "/config" ]
