@@ -3,75 +3,94 @@ requests==2.18.4
 pyyaml>=3.11,<4
 pytz>=2017.02
 pip>=8.0.3
-jinja2>=2.9.6
-voluptuous==0.10.5
+jinja2>=2.10
+voluptuous==0.11.1
 typing>=3,<4
-aiohttp==2.3.5
-yarl==0.15.0
+aiohttp==3.0.6
 async_timeout==2.0.0
-chardet==3.0.4
-astral==1.4
+astral==1.5
 certifi>=2017.4.17
+attrs==17.4.0
 
-# homeassistant.components.frontend
-home-assistant-frontend==20171204.0
+# homeassistant.components.emulated_hue
+# homeassistant.components.http
+aiohttp_cors==0.6.0
+
+# homeassistant.components.sensor.buienradar
+# homeassistant.components.weather.buienradar
+buienradar==0.91
+
+# homeassistant.components.calendar.caldav
+#caldav==0.5.0
+
+# homeassistant.components.sensor.coinmarketcap
+coinmarketcap==4.2.1
+
+# homeassistant.scripts.check_config
+colorlog==3.1.2
 
 # homeassistant.components.updater
-distro==1.1.0
+distro==1.2.0
 
-# homeassistant.components.recorder
-# homeassistant.scripts.db_migrator
-sqlalchemy==1.1.15
-
-# homeassistant.components.mqtt
-# homeassistant.components.shiftr
-paho-mqtt==1.3.1
+# homeassistant.components.ffmpeg
+ha-ffmpeg==1.9
 
 # homeassistant.components.mqtt.server
-hbmqtt==0.9.1
+#hbmqtt==0.9.1
 
-# homeassistant.components.discovery
-netdisco==1.2.2
+# homeassistant.components.frontend
+home-assistant-frontend==20180310.0
 
-# homeassistant.components.media_player.cast
-pychromecast==0.8.2
-
-# homeassistant.components.media_player.soundtouch
-libsoundtouch==0.7.2
+# homeassistant.components.influxdb
+# homeassistant.components.sensor.influxdb
+influxdb==5.0.0
 
 # homeassistant.components.device_tracker.owntracks
 # homeassistant.components.device_tracker.owntracks_http
 libnacl==1.6.1
 
-# homeassistant.components.influxdb
-# homeassistant.components.sensor.influxdb
-influxdb==4.1.1
+# homeassistant.components.media_player.soundtouch
+libsoundtouch==0.7.2
 
-# homeassistant.scripts.check_config
-colorlog==3.0.1
+# homeassistant.components.discovery
+netdisco==1.2.4
 
-# homeassistant.components.emulated_hue
-# homeassistant.components.http
-aiohttp_cors==0.5.3
+# homeassistant.components.mqtt
+# homeassistant.components.shiftr
+paho-mqtt==1.3.1
 
-# homeassistant.components.notify.html5
-pywebpush==1.3.0
+# homeassistant.components.media_player.cast
+pychromecast==2.0.0
 
-# homeassistant.components.ffmpeg
-ha-ffmpeg==1.9
+# homeassistant.components.zwave
+pydispatcher==2.0.5
 
-# homeassistant.components.light.xiaomi_philipslight
-# homeassistant.components.vacuum.xiaomi
-python-miio==0.3.2
-
-# homeassistant.components.telegram_bot
-python-telegram-bot==8.1.1
+# homeassistant.components.fan.xiaomi_miio
+# homeassistant.components.light.xiaomi_miio
+# homeassistant.components.remote.xiaomi_miio
+# homeassistant.components.switch.xiaomi_miio
+# homeassistant.components.vacuum.xiaomi_miio
+python-miio==0.3.7
 
 # homeassistant.components.device_tracker.nmap_tracker
 python-nmap==0.6.1
 
-# homeassistant.components.sensor.coinmarketcap
-coinmarketcap==4.1.1
+# homeassistant.components.telegram_bot
+python-telegram-bot==9.0.0
 
-# homeassistant.components.frontend
-user-agents==1.1.0
+# homeassistant.components.zwave
+python_openzwave==0.4.3
+
+# homeassistant.components.tradfri
+pytradfri[async]==4.1.0
+
+# homeassistant.components.notify.html5
+pywebpush==1.6.0
+
+# homeassistant.components.recorder
+# homeassistant.scripts.db_migrator
+# homeassistant.components.sensor.sql
+sqlalchemy==1.2.2
+
+# homeassistant.components.config.config_entries
+voluptuous-serialize==1
