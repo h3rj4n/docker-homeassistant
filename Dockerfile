@@ -5,10 +5,10 @@ MAINTAINER Herjan van Eijk <docker@f28.nl>
 RUN apk --update --no-cache add libffi libffi-dev ca-certificates \
     python3 python3-dev bash nmap net-tools gcc g++ ffmpeg autoconf openssl-dev \
     linux-headers musl-dev make \
-    openzwave-dev openzwave openzwave-libs eudev-dev && \
+    openzwave-dev openzwave openzwave-libs eudev-dev yaml-dev && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
-    pip3 --no-cache-dir install pychromecast Cython
+    pip3 --no-cache-dir install pychromecast Cython wheel six
 
 VOLUME /config
 
