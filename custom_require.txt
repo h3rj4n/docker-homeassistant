@@ -6,15 +6,18 @@ pip>=8.0.3
 jinja2>=2.10
 voluptuous==0.11.1
 typing>=3,<4
-aiohttp==3.0.6
-async_timeout==2.0.0
-astral==1.5
+aiohttp==3.1.1
+async_timeout==2.0.1
+astral==1.6
 certifi>=2017.4.17
 attrs==17.4.0
 
+# homeassistant.components.notify.html5
+PyJWT==1.6.0
+
 # homeassistant.components.emulated_hue
 # homeassistant.components.http
-aiohttp_cors==0.6.0
+aiohttp_cors==0.7.0
 
 # homeassistant.components.sensor.buienradar
 # homeassistant.components.weather.buienradar
@@ -39,7 +42,7 @@ ha-ffmpeg==1.9
 #hbmqtt==0.9.1
 
 # homeassistant.components.frontend
-home-assistant-frontend==20180310.0
+home-assistant-frontend==20180404.0
 
 # homeassistant.components.influxdb
 # homeassistant.components.sensor.influxdb
@@ -53,14 +56,14 @@ libnacl==1.6.1
 libsoundtouch==0.7.2
 
 # homeassistant.components.discovery
-netdisco==1.2.4
+netdisco==1.3.0
 
 # homeassistant.components.mqtt
 # homeassistant.components.shiftr
 paho-mqtt==1.3.1
 
 # homeassistant.components.media_player.cast
-pychromecast==2.0.0
+pychromecast==2.1.0
 
 # homeassistant.components.zwave
 pydispatcher==2.0.5
@@ -68,21 +71,22 @@ pydispatcher==2.0.5
 # homeassistant.components.fan.xiaomi_miio
 # homeassistant.components.light.xiaomi_miio
 # homeassistant.components.remote.xiaomi_miio
+# homeassistant.components.sensor.xiaomi_miio
 # homeassistant.components.switch.xiaomi_miio
 # homeassistant.components.vacuum.xiaomi_miio
-python-miio==0.3.7
+python-miio==0.3.9
 
 # homeassistant.components.device_tracker.nmap_tracker
 python-nmap==0.6.1
 
 # homeassistant.components.telegram_bot
-python-telegram-bot==9.0.0
+python-telegram-bot==10.0.1
 
 # homeassistant.components.zwave
 python_openzwave==0.4.3
 
 # homeassistant.components.tradfri
-pytradfri[async]==4.1.0
+pytradfri[async]==5.4.2
 
 # homeassistant.components.notify.html5
 pywebpush==1.6.0
@@ -90,7 +94,7 @@ pywebpush==1.6.0
 # homeassistant.components.recorder
 # homeassistant.scripts.db_migrator
 # homeassistant.components.sensor.sql
-sqlalchemy==1.2.2
+sqlalchemy==1.2.5
 
 # homeassistant.components.config.config_entries
 voluptuous-serialize==1

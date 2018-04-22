@@ -1,6 +1,6 @@
 #FROM arm32v6/alpine
-#FROM arm64v8/alpine:latest
-FROM alpine:latest
+FROM arm64v8/alpine:latest
+#FROM alpine:latest
 MAINTAINER Herjan van Eijk <docker@f28.nl>
 
 VOLUME /config
@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 COPY custom_require.txt requirements_all.txt
 
 RUN apk --update --no-cache add libffi ca-certificates \
-      python3 bash nmap net-tools eudev yaml musl openssl && \
+      python3 bash nmap net-tools eudev yaml musl openssl ffmpeg && \
     apk --update --no-cache add --virtual .build-dependencies eudev-dev yaml-dev make \
       linux-headers musl-dev gcc g++ autoconf openssl-dev libffi-dev python3-dev && \
     python3 -m ensurepip && \
