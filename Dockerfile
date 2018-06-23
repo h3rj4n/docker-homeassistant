@@ -11,12 +11,12 @@ WORKDIR /usr/src/app
 COPY custom_require.txt requirements_all.txt
 
 RUN apk --update --no-cache add libffi ca-certificates \
-      python3 bash nmap net-tools eudev yaml musl openssl ffmpeg && \
+      python3 bash nmap net-tools eudev yaml musl openssl ffmpeg mariadb-libs && \
     apk --update --no-cache add --virtual .build-dependencies eudev-dev yaml-dev make \
-      linux-headers musl-dev gcc g++ autoconf openssl-dev libffi-dev python3-dev && \
+      linux-headers musl-dev gcc g++ autoconf libressl-dev libffi-dev python3-dev mariadb-dev && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
-    pip3 --no-cache-dir install pychromecast Cython wheel six && \
+    pip3 --no-cache-dir install pychromecast Cython wheel six mysqlclient && \
     pip3 install --no-cache-dir --upgrade pip setuptools homeassistant && \
     pip3 install --no-cache-dir -r requirements_all.txt && \
     apk del .build-dependencies
