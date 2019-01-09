@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 COPY custom_require.txt requirements_all.txt
 
 RUN apk --update --no-cache add libffi ca-certificates \
-      python3 bash nmap net-tools eudev yaml musl openssl ffmpeg mariadb-libs && \
+      python3 bash nmap net-tools eudev yaml musl openssl ffmpeg mariadb-client mariadb-connector-c && \
     apk --update --no-cache add --virtual .build-dependencies eudev-dev yaml-dev make \
       linux-headers musl-dev gcc g++ autoconf libressl-dev libffi-dev python3-dev mariadb-dev && \
     python3 -m ensurepip && \
@@ -20,6 +20,7 @@ RUN apk --update --no-cache add libffi ca-certificates \
     pip3 install --no-cache-dir --upgrade pip setuptools homeassistant && \
     pip3 install --no-cache-dir -r requirements_all.txt && \
     apk del .build-dependencies
+#
 
 EXPOSE 8123
 
@@ -27,3 +28,5 @@ EXPOSE 8123
 CMD [ "python3", "-m", "homeassistant", "--config", "/config" ]
 
 # First image 451MB,
+
+# CalDAV: py3-lxml && \ libxml2-dev libxslt-dev && \
