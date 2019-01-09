@@ -1,0 +1,12 @@
+kind: pipeline
+name: default
+
+steps:
+- name: ping
+  image: arm64v8/redis
+  commands:
+  - redis-cli -h cache ping
+
+services:
+- name: cache
+  image: redis
