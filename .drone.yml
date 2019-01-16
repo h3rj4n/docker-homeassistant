@@ -6,11 +6,12 @@ platform:
   arch: arm64
 
 steps:
-- name: ping
-  image: arm64v8/redis
-  commands:
-  - redis-cli -h cache ping
-
-services:
-- name: cache
-  image: redis
+- name: build
+  image: plugins/docker
+  settings:
+    repo: h3rj4n/hass
+    dry-run: true
+    username:
+      from_secret: docker_username
+    password:
+      from_secret: docker_password
