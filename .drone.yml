@@ -7,10 +7,10 @@ platform:
 
 steps:
 - name: build
-  image: plugins/docker
+  image: plugins/docker:linux-arm64
   settings:
     repo: h3rj4n/hass
-    dry-run: true
+    #dry-run: true
     username:
       from_secret: docker_username
     password:
