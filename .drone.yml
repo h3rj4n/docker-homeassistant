@@ -10,7 +10,9 @@ steps:
   image: plugins/docker:linux-arm64
   settings:
     repo: h3rj4n/hass
-    #dry-run: true
+    tags:
+      - latest
+      - '0.86.1'
     username:
       from_secret: docker_username
     password:
