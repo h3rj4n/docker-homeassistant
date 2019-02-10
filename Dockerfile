@@ -11,7 +11,7 @@ WORKDIR /usr/src/app
 COPY custom_require.txt requirements_all.txt
 
 RUN apk --update --no-cache add libffi ca-certificates \
-      bash nmap net-tools eudev yaml musl openssl ffmpeg mariadb-client mariadb-connector-c && \
+      bash nmap net-tools eudev yaml musl libressl ffmpeg mariadb-client mariadb-connector-c && \
     apk --update --no-cache add --virtual .build-dependencies eudev-dev yaml-dev make \
       linux-headers musl-dev gcc g++ autoconf libressl-dev libffi-dev mariadb-dev && \
     pip3 --no-cache-dir install --no-use-pep517 pychromecast Cython wheel six mysqlclient setuptools homeassistant && \
