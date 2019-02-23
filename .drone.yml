@@ -12,8 +12,8 @@ steps:
     repo: h3rj4n/hass
     tags:
       - latest
-      - '0.87'
-      - '0.87.1'
+      - '0.88'
+      - '0.88.1'
     username:
       from_secret: docker_username
     password:
