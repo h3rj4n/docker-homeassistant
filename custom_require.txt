@@ -34,6 +34,17 @@ coinmarketcap==5.0.3
 # homeassistant.scripts.check_config
 colorlog==4.0.2
 
+# homeassistant.components.climate.eq3btsmart
+# homeassistant.components.sensor.eddystone_temperature
+# homeassistant.components.xiaomi_miio.device_tracker
+# homeassistant.components.xiaomi_miio.fan
+# homeassistant.components.xiaomi_miio.light
+# homeassistant.components.xiaomi_miio.remote
+# homeassistant.components.xiaomi_miio.sensor
+# homeassistant.components.xiaomi_miio.switch
+# homeassistant.components.xiaomi_miio.vacuum
+construct==2.9.45
+
 # homeassistant.components.updater
 distro==1.4.0
 
@@ -53,8 +64,7 @@ home-assistant-frontend==20190220.0
 # homeassistant.components.sensor.influxdb
 influxdb==5.2.0
 
-# homeassistant.components.device_tracker.owntracks
-# homeassistant.components.device_tracker.owntracks_http
+# homeassistant.components.owntracks
 libnacl==1.6.1
 
 # homeassistant.components.media_player.soundtouch
@@ -73,13 +83,13 @@ pychromecast==2.5.2
 # homeassistant.components.zwave
 pydispatcher==2.0.5
 
-# homeassistant.components.device_tracker.xiaomi_miio
-# homeassistant.components.fan.xiaomi_miio
-# homeassistant.components.light.xiaomi_miio
-# homeassistant.components.remote.xiaomi_miio
-# homeassistant.components.sensor.xiaomi_miio
-# homeassistant.components.switch.xiaomi_miio
-# homeassistant.components.vacuum.xiaomi_miio
+# homeassistant.components.xiaomi_miio.device_tracker
+# homeassistant.components.xiaomi_miio.fan
+# homeassistant.components.xiaomi_miio.light
+# homeassistant.components.xiaomi_miio.remote
+# homeassistant.components.xiaomi_miio.sensor
+# homeassistant.components.xiaomi_miio.switch
+# homeassistant.components.xiaomi_miio.vacuum
 python-miio==0.4.4
 
 # homeassistant.components.device_tracker.nmap_tracker
