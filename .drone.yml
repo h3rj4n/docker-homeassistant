@@ -12,9 +12,23 @@ steps:
     repo: h3rj4n/hass
     tags:
       - latest
-      - '0.88'
-      - '0.88.2'
+      - '0.89'
+      - '0.89.1'
     username:
       from_secret: docker_username
     password:
       from_secret: docker_password
+
+- name: deploy
+  image: docker:latest
+  volumes:
+    - name: docker_sock
+      path: /var/run/docker.sock
+  commands:
+    - docker service update --image h3rj4n/hass:latest hass_hass
+
+
+volumes:
+  - name: docker_sock
+    host:
+      path: /var/run/docker.sock
