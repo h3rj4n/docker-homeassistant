@@ -6,14 +6,14 @@ attrs==18.2.0
 bcrypt==3.1.6
 certifi>=2018.04.16
 jinja2>=2.10
-PyJWT==1.6.4
-cryptography==2.5
+PyJWT==1.7.1
+cryptography==2.6.1
 pip>=8.0.3
-python-slugify==1.2.6
-pytz>=2018.07
+python-slugify==3.0.2
+pytz>=2019.01
 pyyaml>=3.13,<4
 requests==2.21.0
-ruamel.yaml==0.15.89
+ruamel.yaml==0.15.91
 voluptuous==0.11.5
 voluptuous-serialize==2.1.0
 # homeassistant.components.mobile_app
@@ -24,34 +24,27 @@ PyNaCl==1.3.0
 # homeassistant.components.http
 aiohttp_cors==0.7.0
 
-# homeassistant.components.buienradar.sensor
-# homeassistant.components.buienradar.weather
+# homeassistant.components.buienradar
 buienradar==0.91
 
 # homeassistant.components.caldav.calendar
 #caldav==0.5.0
 
-# homeassistant.components.coinmarketcap.sensor
+# homeassistant.components.coinmarketcap
 coinmarketcap==5.0.3
 
 # homeassistant.scripts.check_config
 colorlog==4.0.2
 
-# homeassistant.components.eddystone_temperature.sensor
-# homeassistant.components.eq3btsmart.climate
-# homeassistant.components.xiaomi_miio.device_tracker
-# homeassistant.components.xiaomi_miio.fan
-# homeassistant.components.xiaomi_miio.light
-# homeassistant.components.xiaomi_miio.remote
-# homeassistant.components.xiaomi_miio.sensor
-# homeassistant.components.xiaomi_miio.switch
-# homeassistant.components.xiaomi_miio.vacuum
+# homeassistant.components.eddystone_temperature
+# homeassistant.components.eq3btsmart
+# homeassistant.components.xiaomi_miio
 construct==2.9.45
 
 # homeassistant.components.updater
 distro==1.4.0
 
-# homeassistant.components.glances.sensor
+# homeassistant.components.glances
 glances_api==0.2.0
 
 # homeassistant.components.ffmpeg
@@ -60,21 +53,20 @@ ha-ffmpeg==2.0
 # homeassistant.components.mqtt.server
 #hbmqtt==0.9.2
 
-# homeassistant.components.workday.binary_sensor
+# homeassistant.components.workday
 holidays==0.9.10
 
 # homeassistant.components.frontend
-home-assistant-frontend==20190331.0
+home-assistant-frontend==20190424.0
 
 # homeassistant.components.influxdb
-# homeassistant.components.influxdb.sensor
 influxdb==5.2.0
 
-# homeassistant.components.soundtouch.media_player
+# homeassistant.components.soundtouch
 libsoundtouch==0.7.2
 
 # homeassistant.components.discovery
-netdisco==2.5.0
+netdisco==2.6.0
 
 # homeassistant.components.mqtt
 # homeassistant.components.shiftr
@@ -84,21 +76,15 @@ paho-mqtt==1.4.0
 prometheus_client==0.2.0
 
 # homeassistant.components.cast
-pychromecast==3.0.0
+pychromecast==3.2.0
 
 # homeassistant.components.zwave
 pydispatcher==2.0.5
 
-# homeassistant.components.xiaomi_miio.device_tracker
-# homeassistant.components.xiaomi_miio.fan
-# homeassistant.components.xiaomi_miio.light
-# homeassistant.components.xiaomi_miio.remote
-# homeassistant.components.xiaomi_miio.sensor
-# homeassistant.components.xiaomi_miio.switch
-# homeassistant.components.xiaomi_miio.vacuum
+# homeassistant.components.xiaomi_miio
 python-miio==0.4.5
 
-# homeassistant.components.nmap_tracker.device_tracker
+# homeassistant.components.nmap_tracker
 python-nmap==0.6.1
 
 # homeassistant.components.telegram_bot
@@ -107,15 +93,15 @@ python-nmap==0.6.1
 # homeassistant.components.tradfri
 pytradfri[async]==6.0.1
 
-# homeassistant.components.html5.notify
-pywebpush==1.6.0
+# homeassistant.components.html5
+pywebpush==1.9.2
 
-# homeassistant.components.simplepush.notify
+# homeassistant.components.simplepush
 simplepush==1.1.4
 
 # homeassistant.components.recorder
-# homeassistant.components.sql.sensor
+# homeassistant.components.sql
 sqlalchemy==1.3.0
 
-# homeassistant.components.steam_online.sensor
+# homeassistant.components.steam_online
 steamodd==4.21
