@@ -50,8 +50,8 @@ glances_api==0.2.0
 # homeassistant.components.ffmpeg
 ha-ffmpeg==2.0
 
-# homeassistant.components.mqtt.server
-#hbmqtt==0.9.2
+# homeassistant.components.mqtt
+hbmqtt==0.9.4
 
 # homeassistant.components.workday
 holidays==0.9.10
