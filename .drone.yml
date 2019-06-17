@@ -13,7 +13,7 @@ steps:
     tags:
       - latest
       - '0.94'
-      - '0.94.1'
+      - '0.94.3'
     username:
       from_secret: docker_username
     password:
