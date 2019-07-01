@@ -12,9 +12,9 @@ cryptography==2.6.1
 pip>=8.0.3
 python-slugify==3.0.2
 pytz>=2019.01
-pyyaml>=3.13,<4
+pyyaml==5.1
 requests==2.22.0
-ruamel.yaml==0.15.94
+ruamel.yaml==0.15.97
 voluptuous==0.11.5
 voluptuous-serialize==2.1.0
 # homeassistant.components.mobile_app
@@ -58,7 +58,7 @@ hbmqtt==0.9.4
 holidays==0.9.10
 
 # homeassistant.components.frontend
-home-assistant-frontend==20190604.0
+home-assistant-frontend==20190626.0
 
 # homeassistant.components.influxdb
 influxdb==5.2.0
@@ -78,7 +78,7 @@ paho-mqtt==1.4.0
 prometheus_client==0.2.0
 
 # homeassistant.components.cast
-pychromecast==3.2.1
+pychromecast==3.2.2
 
 # homeassistant.components.zwave
 pydispatcher==2.0.5
