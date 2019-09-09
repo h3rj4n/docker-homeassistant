@@ -50,7 +50,7 @@ PyEssent==0.13
 PyGithub==1.43.5
 
 # homeassistant.components.isy994
-PyISY==1.1.1
+PyISY==1.1.2
 
 # homeassistant.components.mvglive
 PyMVGLive==1.1.4
@@ -142,7 +142,7 @@ aiofreepybox==0.0.8
 aioftp==0.12.0
 
 # homeassistant.components.harmony
-aioharmony==0.1.11
+aioharmony==0.1.13
 
 # homeassistant.components.emulated_hue
 # homeassistant.components.http
@@ -624,7 +624,7 @@ hole==0.5.0
 holidays==0.9.11
 
 # homeassistant.components.frontend
-home-assistant-frontend==20190828.0
+home-assistant-frontend==20190828.1
 
 # homeassistant.components.zwave
 homeassistant-pyozw==0.1.4
@@ -1186,7 +1186,7 @@ pygtfs==0.1.5
 pygtt==1.1.2
 
 # homeassistant.components.version
-pyhaversion==3.0.2
+pyhaversion==3.1.0
 
 # homeassistant.components.heos
 pyheos==0.6.0
@@ -1857,7 +1857,7 @@ tplink==0.2.1
 transmissionrpc==0.11
 
 # homeassistant.components.tuya
-tuyaha==0.0.3
+tuyaha==0.0.4
 
 # homeassistant.components.twentemilieu
 twentemilieu==0.1.0
