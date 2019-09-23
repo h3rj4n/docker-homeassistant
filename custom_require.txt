@@ -59,7 +59,7 @@ hbmqtt==0.9.4
 holidays==0.9.11
 
 # homeassistant.components.frontend
-home-assistant-frontend==20190918.1
+home-assistant-frontend==20190919.0
 
 # homeassistant.components.influxdb
 influxdb==5.2.0
@@ -92,7 +92,7 @@ python-nmap==0.6.1
 
 
 # homeassistant.components.tradfri
-pytradfri[async]==6.0.1
+pytradfri[async]==6.3.1
 
 # homeassistant.components.html5
 pywebpush==1.9.2

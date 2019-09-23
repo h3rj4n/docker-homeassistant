@@ -1,6 +1,4 @@
-#FROM arm32v6/alpine
 FROM arm64v8/python:3-alpine
-#FROM alpine:latest
 MAINTAINER Herjan van Eijk <docker@f28.nl>
 
 VOLUME /config
