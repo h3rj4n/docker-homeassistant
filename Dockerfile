@@ -12,7 +12,7 @@ RUN apk --update --no-cache add libffi ca-certificates curl \
       bash nmap net-tools eudev yaml musl openssl ffmpeg mariadb-client mariadb-connector-c && \
     apk --update --no-cache add --virtual .build-dependencies eudev-dev yaml-dev make \
       linux-headers musl-dev gcc g++ autoconf openssl-dev libffi-dev mariadb-dev && \
-    pip3 --no-cache-dir install pychromecast Cython wheel six mysqlclient setuptools homeassistant && \
+    pip3 --no-cache-dir install pyotp pychromecast Cython wheel six mysqlclient setuptools homeassistant && \
     pip3 --no-cache-dir install -r requirements_all.txt && \
     apk del .build-dependencies
 
