@@ -29,6 +29,9 @@ adguardhome==0.3.0
 # homeassistant.components.http
 aiohttp_cors==0.7.0
 
+# homeassistant.components.stream
+av==6.1.2
+
 # homeassistant.components.buienradar
 buienradar==1.0.1
 
