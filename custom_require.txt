@@ -5,7 +5,7 @@ async_timeout==3.0.1
 attrs==19.3.0
 bcrypt==3.1.7
 certifi>=2019.11.28
-importlib-metadata==1.4.0
+importlib-metadata==1.5.0
 jinja2>=2.10.3
 PyJWT==1.7.1
 cryptography==2.8
@@ -58,6 +58,9 @@ colorlog==4.1.0
 # homeassistant.components.xiaomi_miio
 construct==2.9.45
 
+# homeassistant.components.coronavirus
+coronavirus==1.0.1
+
 # homeassistant.components.updater
 distro==1.4.0
 
@@ -74,10 +77,10 @@ ha-ffmpeg==2.0
 hbmqtt==0.9.5
 
 # homeassistant.components.workday
-holidays==0.9.12
+holidays==0.10.1
 
 # homeassistant.components.frontend
-home-assistant-frontend==20200130.3
+home-assistant-frontend==20200220.5
 
 # homeassistant.components.influxdb
 influxdb==5.2.3
