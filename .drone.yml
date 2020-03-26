@@ -12,8 +12,8 @@ steps:
     repo: h3rj4n/hass
     tags:
       - latest
-      - '0.106'
-      - '0.106.5'
+      - '0.107'
+      - '0.107.6'
     username:
       from_secret: docker_username
     password:
@@ -26,7 +26,6 @@ steps:
       path: /var/run/docker.sock
   commands:
     - docker service update -q --image h3rj4n/hass:latest hass_hass
-
 
 volumes:
   - name: docker_sock
